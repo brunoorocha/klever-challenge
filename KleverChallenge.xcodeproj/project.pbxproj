@@ -14,6 +14,11 @@
 		A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */; };
 		A356BD1A2B21E6ED006929B2 /* KleverChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */; };
 		A356BD1C2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */; };
+		A356BD2A2B21E754006929B2 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A356BD282B21E754006929B2 /* Database.xcdatamodeld */; };
+		A356BD302B21E976006929B2 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD2F2B21E976006929B2 /* Anime.swift */; };
+		A356BD322B21EA6B006929B2 /* AnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD312B21EA6B006929B2 /* AnimeRepository.swift */; };
+		A356BD342B21EABD006929B2 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD332B21EABD006929B2 /* Season.swift */; };
+		A356BD372B21EB7B006929B2 /* SeasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD362B21EB7B006929B2 /* SeasonTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		A356BD152B21E6ED006929B2 /* KleverChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleverChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeUITests.swift; sourceTree = "<group>"; };
 		A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A356BD292B21E754006929B2 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		A356BD2F2B21E976006929B2 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		A356BD312B21EA6B006929B2 /* AnimeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeRepository.swift; sourceTree = "<group>"; };
+		A356BD332B21EABD006929B2 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		A356BD362B21EB7B006929B2 /* SeasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,11 @@
 		A356BCFD2B21E6EB006929B2 /* KleverChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A356BD2B2B21E8C4006929B2 /* Domain */,
 				A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */,
 				A356BD002B21E6EB006929B2 /* ContentView.swift */,
 				A356BD022B21E6ED006929B2 /* Assets.xcassets */,
+				A356BD282B21E754006929B2 /* Database.xcdatamodeld */,
 				A356BD042B21E6ED006929B2 /* Preview Content */,
 			);
 			path = KleverChallenge;
@@ -113,6 +125,7 @@
 		A356BD0E2B21E6ED006929B2 /* KleverChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A356BD352B21EB62006929B2 /* Domain */,
 				A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */,
 			);
 			path = KleverChallengeTests;
@@ -125,6 +138,40 @@
 				A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */,
 			);
 			path = KleverChallengeUITests;
+			sourceTree = "<group>";
+		};
+		A356BD2B2B21E8C4006929B2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD2E2B21E8DD006929B2 /* Repository */,
+				A356BD2D2B21E8D2006929B2 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A356BD2D2B21E8D2006929B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD2F2B21E976006929B2 /* Anime.swift */,
+				A356BD332B21EABD006929B2 /* Season.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A356BD2E2B21E8DD006929B2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD312B21EA6B006929B2 /* AnimeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A356BD352B21EB62006929B2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD362B21EB7B006929B2 /* SeasonTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A356BD302B21E976006929B2 /* Anime.swift in Sources */,
 				A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */,
+				A356BD322B21EA6B006929B2 /* AnimeRepository.swift in Sources */,
+				A356BD2A2B21E754006929B2 /* Database.xcdatamodeld in Sources */,
+				A356BD342B21EABD006929B2 /* Season.swift in Sources */,
 				A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A356BD372B21EB7B006929B2 /* SeasonTests.swift in Sources */,
 				A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +629,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A356BD282B21E754006929B2 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A356BD292B21E754006929B2 /* Database.xcdatamodel */,
+			);
+			currentVersion = A356BD292B21E754006929B2 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A356BCF32B21E6EB006929B2 /* Project object */;
 }
