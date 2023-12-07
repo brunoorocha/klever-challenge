@@ -17,6 +17,7 @@ final class APIAnimeRepository {
 
 extension APIAnimeRepository: AnimeRepository {
     func animes(fromSeason season: Season, ofYear year: Int) async throws -> [Anime] {
-        return try await service.request(.animes(fromSeason: season, ofYear: year))
+        let response = try await service.request(.animes(fromSeason: season, ofYear: year)) as AnimeListResponse
+        return response.animes
     }
 }

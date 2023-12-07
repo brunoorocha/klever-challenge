@@ -27,6 +27,9 @@
 		A356BD4B2B21F7F3006929B2 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD4A2B21F7F3006929B2 /* APIRequestTests.swift */; };
 		A356BD4E2B21FB16006929B2 /* Anime+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD4D2B21FB16006929B2 /* Anime+Decodable.swift */; };
 		A356BD502B21FB97006929B2 /* AnimeDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD4F2B21FB97006929B2 /* AnimeDecodingTests.swift */; };
+		A356BD542B223065006929B2 /* animes.json in Resources */ = {isa = PBXBuildFile; fileRef = A356BD532B223065006929B2 /* animes.json */; };
+		A356BD572B2230B4006929B2 /* ReadJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD562B2230B4006929B2 /* ReadJSONFile.swift */; };
+		A356BD592B2232C3006929B2 /* AnimeListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD582B2232C3006929B2 /* AnimeListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		A356BD4A2B21F7F3006929B2 /* APIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 		A356BD4D2B21FB16006929B2 /* Anime+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+Decodable.swift"; sourceTree = "<group>"; };
 		A356BD4F2B21FB97006929B2 /* AnimeDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDecodingTests.swift; sourceTree = "<group>"; };
+		A356BD532B223065006929B2 /* animes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animes.json; sourceTree = "<group>"; };
+		A356BD562B2230B4006929B2 /* ReadJSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSONFile.swift; sourceTree = "<group>"; };
+		A356BD582B2232C3006929B2 /* AnimeListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,8 @@
 		A356BD492B21F7DD006929B2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A356BD552B22309A006929B2 /* Utils */,
+				A356BD522B223036006929B2 /* MockData */,
 				A356BD4A2B21F7F3006929B2 /* APIRequestTests.swift */,
 				A356BD4F2B21FB97006929B2 /* AnimeDecodingTests.swift */,
 			);
@@ -250,8 +258,25 @@
 			isa = PBXGroup;
 			children = (
 				A356BD4D2B21FB16006929B2 /* Anime+Decodable.swift */,
+				A356BD582B2232C3006929B2 /* AnimeListResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A356BD522B223036006929B2 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD532B223065006929B2 /* animes.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		A356BD552B22309A006929B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD562B2230B4006929B2 /* ReadJSONFile.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A356BD542B223065006929B2 /* animes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +413,7 @@
 				A356BD4E2B21FB16006929B2 /* Anime+Decodable.swift in Sources */,
 				A356BD452B21F601006929B2 /* AnimesOfSeason.swift in Sources */,
 				A356BD302B21E976006929B2 /* Anime.swift in Sources */,
+				A356BD592B2232C3006929B2 /* AnimeListResponse.swift in Sources */,
 				A356BD3B2B21EF64006929B2 /* APIService.swift in Sources */,
 				A356BD3D2B21EFDC006929B2 /* APIRequest.swift in Sources */,
 				A356BD472B21F75B006929B2 /* URLComponents+addQueryItem.swift in Sources */,
@@ -407,6 +434,7 @@
 				A356BD502B21FB97006929B2 /* AnimeDecodingTests.swift in Sources */,
 				A356BD4B2B21F7F3006929B2 /* APIRequestTests.swift in Sources */,
 				A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */,
+				A356BD572B2230B4006929B2 /* ReadJSONFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
