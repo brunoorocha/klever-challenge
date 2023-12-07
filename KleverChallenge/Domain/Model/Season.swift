@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Season {
+enum Season: String {
     case winter
     case spring
     case summer
