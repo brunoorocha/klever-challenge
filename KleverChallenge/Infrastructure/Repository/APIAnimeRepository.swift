@@ -10,7 +10,7 @@ import Foundation
 final class APIAnimeRepository {
     private let service: APIService
     
-    init(service: APIService) {
+    init(service: APIService = APIService()) {
         self.service = service
     }
 }

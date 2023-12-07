@@ -19,7 +19,7 @@ extension APIRequest {
 
     var urlRequest: URLRequest? {
         guard var urlComponents = URLComponents(string: baseURL) else { return nil }
-        urlComponents.path = endpoint
+        urlComponents.path += endpoint
         params.forEach { (key, value) in
             urlComponents.addQueyItem(named: key, value: value)
         }
