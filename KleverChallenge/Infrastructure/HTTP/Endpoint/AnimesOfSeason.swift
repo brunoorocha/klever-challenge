@@ -20,7 +20,7 @@ extension AnimesOfSeason: APIRequest {
     var params: [String : String] {
         [
             "filter[season]" : season.rawValue,
-            "filter[year]" : String(year),
+            "filter[seasonYear]" : String(year),
         ]
     }
 }

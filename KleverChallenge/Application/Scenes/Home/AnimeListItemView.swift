@@ -8,21 +8,28 @@
 import SwiftUI
 
 struct AnimeListItemView: View {
-    let viewModel: AnimeListItemViewModel
+    @StateObject var viewModel: AnimeListItemViewModel
 
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
-                VStack {
-                    Image(systemName: "photo")
+                if let coverImage = viewModel.posterImage {
+                    Image(uiImage: coverImage)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(height: 32)
-                        .foregroundColor(.gray)
-                        .padding()
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.black.opacity(0.1))
+                else {
+                    VStack {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 32)
+                            .foregroundColor(.gray)
+                            .padding()
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.primary.opacity(0.08))
+                }
             }
             .cornerRadius(16)
 

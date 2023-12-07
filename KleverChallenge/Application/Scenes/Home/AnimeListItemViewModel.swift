@@ -8,12 +8,33 @@
 import SwiftUI
 
 class AnimeListItemViewModel: Identifiable, ObservableObject {
-    let id = UUID()
-    let title: String
+    private let model: Anime
+    private let repository: ImageRepository
 
-    @Published var coverImage: UIImage?
+    let id = UUID()
     
-    init(model: Anime) {
-        title = model.title
+    var title: String {
+        model.title
+    }
+
+    @Published var posterImage: UIImage?
+    
+    init(model: Anime, repository: ImageRepository = RemoteImageRepository()) {
+        self.model = model
+        self.repository = repository
+        Task {
+            await loadImage()
+        }
+    }
+    
+    @MainActor
+    func loadImage() async {
+        do {
+            guard let posterImageURL = model.posterImageURL, let url = URL(string: posterImageURL) else { return }
+            let data = try await repository.loadImageData(fromURL: url)
+            posterImage = UIImage(data: data)
+        } catch {
+            print(error)
+        }
     }
 }

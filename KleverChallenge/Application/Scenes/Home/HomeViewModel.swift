@@ -27,7 +27,9 @@ class HomeViewModel: ObservableObject {
 
         do {
             let animes = try await repository.animes(fromSeason: .current, ofYear: 2023)
-            self.animes = animes.map(AnimeListItemViewModel.init(model:))
+            self.animes = animes.map {
+                AnimeListItemViewModel.init(model: $0)
+            }
         } catch {
             isShowingError = true
             print(error)
