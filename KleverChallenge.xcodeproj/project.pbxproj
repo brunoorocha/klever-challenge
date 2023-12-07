@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */; };
+		A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD002B21E6EB006929B2 /* ContentView.swift */; };
+		A356BD032B21E6ED006929B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356BD022B21E6ED006929B2 /* Assets.xcassets */; };
+		A356BD062B21E6ED006929B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356BD052B21E6ED006929B2 /* Preview Assets.xcassets */; };
+		A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */; };
+		A356BD1A2B21E6ED006929B2 /* KleverChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */; };
+		A356BD1C2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A356BD0C2B21E6ED006929B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A356BCF32B21E6EB006929B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A356BCFA2B21E6EB006929B2;
+			remoteInfo = KleverChallenge;
+		};
+		A356BD162B21E6ED006929B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A356BCF32B21E6EB006929B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A356BCFA2B21E6EB006929B2;
+			remoteInfo = KleverChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A356BCFB2B21E6EB006929B2 /* KleverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeApp.swift; sourceTree = "<group>"; };
+		A356BD002B21E6EB006929B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A356BD022B21E6ED006929B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A356BD052B21E6ED006929B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A356BD0B2B21E6ED006929B2 /* KleverChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleverChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeTests.swift; sourceTree = "<group>"; };
+		A356BD152B21E6ED006929B2 /* KleverChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KleverChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeUITests.swift; sourceTree = "<group>"; };
+		A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A356BCF82B21E6EB006929B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD082B21E6ED006929B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD122B21E6ED006929B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A356BCF22B21E6EB006929B2 = {
+			isa = PBXGroup;
+			children = (
+				A356BCFD2B21E6EB006929B2 /* KleverChallenge */,
+				A356BD0E2B21E6ED006929B2 /* KleverChallengeTests */,
+				A356BD182B21E6ED006929B2 /* KleverChallengeUITests */,
+				A356BCFC2B21E6EB006929B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A356BCFC2B21E6EB006929B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A356BCFB2B21E6EB006929B2 /* KleverChallenge.app */,
+				A356BD0B2B21E6ED006929B2 /* KleverChallengeTests.xctest */,
+				A356BD152B21E6ED006929B2 /* KleverChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A356BCFD2B21E6EB006929B2 /* KleverChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */,
+				A356BD002B21E6EB006929B2 /* ContentView.swift */,
+				A356BD022B21E6ED006929B2 /* Assets.xcassets */,
+				A356BD042B21E6ED006929B2 /* Preview Content */,
+			);
+			path = KleverChallenge;
+			sourceTree = "<group>";
+		};
+		A356BD042B21E6ED006929B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD052B21E6ED006929B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A356BD0E2B21E6ED006929B2 /* KleverChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */,
+			);
+			path = KleverChallengeTests;
+			sourceTree = "<group>";
+		};
+		A356BD182B21E6ED006929B2 /* KleverChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */,
+				A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */,
+			);
+			path = KleverChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A356BCFA2B21E6EB006929B2 /* KleverChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A356BD1F2B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallenge" */;
+			buildPhases = (
+				A356BCF72B21E6EB006929B2 /* Sources */,
+				A356BCF82B21E6EB006929B2 /* Frameworks */,
+				A356BCF92B21E6EB006929B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KleverChallenge;
+			productName = KleverChallenge;
+			productReference = A356BCFB2B21E6EB006929B2 /* KleverChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A356BD0A2B21E6ED006929B2 /* KleverChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A356BD222B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallengeTests" */;
+			buildPhases = (
+				A356BD072B21E6ED006929B2 /* Sources */,
+				A356BD082B21E6ED006929B2 /* Frameworks */,
+				A356BD092B21E6ED006929B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A356BD0D2B21E6ED006929B2 /* PBXTargetDependency */,
+			);
+			name = KleverChallengeTests;
+			productName = KleverChallengeTests;
+			productReference = A356BD0B2B21E6ED006929B2 /* KleverChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A356BD142B21E6ED006929B2 /* KleverChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A356BD252B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallengeUITests" */;
+			buildPhases = (
+				A356BD112B21E6ED006929B2 /* Sources */,
+				A356BD122B21E6ED006929B2 /* Frameworks */,
+				A356BD132B21E6ED006929B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A356BD172B21E6ED006929B2 /* PBXTargetDependency */,
+			);
+			name = KleverChallengeUITests;
+			productName = KleverChallengeUITests;
+			productReference = A356BD152B21E6ED006929B2 /* KleverChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A356BCF32B21E6EB006929B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A356BCFA2B21E6EB006929B2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A356BD0A2B21E6ED006929B2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A356BCFA2B21E6EB006929B2;
+					};
+					A356BD142B21E6ED006929B2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A356BCFA2B21E6EB006929B2;
+					};
+				};
+			};
+			buildConfigurationList = A356BCF62B21E6EB006929B2 /* Build configuration list for PBXProject "KleverChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A356BCF22B21E6EB006929B2;
+			productRefGroup = A356BCFC2B21E6EB006929B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A356BCFA2B21E6EB006929B2 /* KleverChallenge */,
+				A356BD0A2B21E6ED006929B2 /* KleverChallengeTests */,
+				A356BD142B21E6ED006929B2 /* KleverChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A356BCF92B21E6EB006929B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A356BD062B21E6ED006929B2 /* Preview Assets.xcassets in Resources */,
+				A356BD032B21E6ED006929B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD092B21E6ED006929B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD132B21E6ED006929B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A356BCF72B21E6EB006929B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */,
+				A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD072B21E6ED006929B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A356BD112B21E6ED006929B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A356BD1A2B21E6ED006929B2 /* KleverChallengeUITests.swift in Sources */,
+				A356BD1C2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A356BD0D2B21E6ED006929B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A356BCFA2B21E6EB006929B2 /* KleverChallenge */;
+			targetProxy = A356BD0C2B21E6ED006929B2 /* PBXContainerItemProxy */;
+		};
+		A356BD172B21E6ED006929B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A356BCFA2B21E6EB006929B2 /* KleverChallenge */;
+			targetProxy = A356BD162B21E6ED006929B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A356BD1D2B21E6ED006929B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A356BD1E2B21E6ED006929B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A356BD202B21E6ED006929B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KleverChallenge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A356BD212B21E6ED006929B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KleverChallenge/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A356BD232B21E6ED006929B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KleverChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KleverChallenge";
+			};
+			name = Debug;
+		};
+		A356BD242B21E6ED006929B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KleverChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KleverChallenge";
+			};
+			name = Release;
+		};
+		A356BD262B21E6ED006929B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KleverChallenge;
+			};
+			name = Debug;
+		};
+		A356BD272B21E6ED006929B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunoorocha.KleverChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KleverChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A356BCF62B21E6EB006929B2 /* Build configuration list for PBXProject "KleverChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A356BD1D2B21E6ED006929B2 /* Debug */,
+				A356BD1E2B21E6ED006929B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A356BD1F2B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A356BD202B21E6ED006929B2 /* Debug */,
+				A356BD212B21E6ED006929B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A356BD222B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A356BD232B21E6ED006929B2 /* Debug */,
+				A356BD242B21E6ED006929B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A356BD252B21E6ED006929B2 /* Build configuration list for PBXNativeTarget "KleverChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A356BD262B21E6ED006929B2 /* Debug */,
+				A356BD272B21E6ED006929B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A356BCF32B21E6EB006929B2 /* Project object */;
+}
