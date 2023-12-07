@@ -38,6 +38,8 @@
 		A356BD6B2B2236E8006929B2 /* Anime+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD6A2B2236E8006929B2 /* Anime+mock.swift */; };
 		A356BD6E2B225800006929B2 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD6D2B225800006929B2 /* ImageRepository.swift */; };
 		A356BD702B225850006929B2 /* RemoteImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD6F2B225850006929B2 /* RemoteImageRepository.swift */; };
+		A356BD722B225E1D006929B2 /* LocalImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD712B225E1D006929B2 /* LocalImageRepository.swift */; };
+		A356BD742B2262D2006929B2 /* CachedImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD732B2262D2006929B2 /* CachedImageRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		A356BD6A2B2236E8006929B2 /* Anime+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+mock.swift"; sourceTree = "<group>"; };
 		A356BD6D2B225800006929B2 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		A356BD6F2B225850006929B2 /* RemoteImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageRepository.swift; sourceTree = "<group>"; };
+		A356BD712B225E1D006929B2 /* LocalImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageRepository.swift; sourceTree = "<group>"; };
+		A356BD732B2262D2006929B2 /* CachedImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +359,8 @@
 			children = (
 				A356BD6D2B225800006929B2 /* ImageRepository.swift */,
 				A356BD6F2B225850006929B2 /* RemoteImageRepository.swift */,
+				A356BD712B225E1D006929B2 /* LocalImageRepository.swift */,
+				A356BD732B2262D2006929B2 /* CachedImageRepository.swift */,
 			);
 			path = ImageRepository;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A356BD4E2B21FB16006929B2 /* Anime+Decodable.swift in Sources */,
+				A356BD742B2262D2006929B2 /* CachedImageRepository.swift in Sources */,
 				A356BD452B21F601006929B2 /* AnimesOfSeason.swift in Sources */,
 				A356BD302B21E976006929B2 /* Anime.swift in Sources */,
 				A356BD702B225850006929B2 /* RemoteImageRepository.swift in Sources */,
@@ -501,6 +508,7 @@
 				A356BD6E2B225800006929B2 /* ImageRepository.swift in Sources */,
 				A356BD5F2B22345E006929B2 /* RootView.swift in Sources */,
 				A356BD3B2B21EF64006929B2 /* HTTPService.swift in Sources */,
+				A356BD722B225E1D006929B2 /* LocalImageRepository.swift in Sources */,
 				A356BD662B2235FD006929B2 /* AnimeListItemViewModel.swift in Sources */,
 				A356BD3D2B21EFDC006929B2 /* APIRequest.swift in Sources */,
 				A356BD472B21F75B006929B2 /* URLComponents+addQueryItem.swift in Sources */,

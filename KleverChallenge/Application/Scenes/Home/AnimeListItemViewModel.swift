@@ -19,7 +19,7 @@ class AnimeListItemViewModel: Identifiable, ObservableObject {
 
     @Published var posterImage: UIImage?
     
-    init(model: Anime, repository: ImageRepository = RemoteImageRepository()) {
+    init(model: Anime, repository: ImageRepository = CachedImageRepository()) {
         self.model = model
         self.repository = repository
         Task {
