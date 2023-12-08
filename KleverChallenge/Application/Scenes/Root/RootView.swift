@@ -14,7 +14,7 @@ struct RootView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            Text("My List")
+            MyListView(viewModel: MyListViewModel())
                 .tabItem {
                     Label("My List", systemImage: "heart")
                 }

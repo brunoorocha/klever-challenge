@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32BA22F2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA22D2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift */; };
+		A32BA2302B23A477003F1F06 /* CoreDataAnime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA22E2B23A477003F1F06 /* CoreDataAnime+CoreDataProperties.swift */; };
+		A32BA2332B23A4AD003F1F06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2322B23A4AD003F1F06 /* CoreDataManager.swift */; };
+		A32BA2362B23AD46003F1F06 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2352B23AD46003F1F06 /* MyListView.swift */; };
+		A32BA2382B23AD8F003F1F06 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */; };
 		A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */; };
 		A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD002B21E6EB006929B2 /* ContentView.swift */; };
 		A356BD032B21E6ED006929B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356BD022B21E6ED006929B2 /* Assets.xcassets */; };
@@ -14,7 +19,7 @@
 		A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */; };
 		A356BD1A2B21E6ED006929B2 /* KleverChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD192B21E6ED006929B2 /* KleverChallengeUITests.swift */; };
 		A356BD1C2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD1B2B21E6ED006929B2 /* KleverChallengeUITestsLaunchTests.swift */; };
-		A356BD2A2B21E754006929B2 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A356BD282B21E754006929B2 /* Database.xcdatamodeld */; };
+		A356BD2A2B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A356BD282B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld */; };
 		A356BD302B21E976006929B2 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD2F2B21E976006929B2 /* Anime.swift */; };
 		A356BD322B21EA6B006929B2 /* AnimeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD312B21EA6B006929B2 /* AnimeRepository.swift */; };
 		A356BD342B21EABD006929B2 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD332B21EABD006929B2 /* Season.swift */; };
@@ -43,6 +48,8 @@
 		A356BD792B233B9F006929B2 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */; };
 		A356BD7D2B234CEA006929B2 /* AnimeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD7C2B234CEA006929B2 /* AnimeDetailsView.swift */; };
 		A356BD7F2B235096006929B2 /* AnimeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */; };
+		A3C0DAD42B2399B8000CD978 /* MyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0DAD32B2399B8000CD978 /* MyListRepository.swift */; };
+		A3C0DAD72B239AEC000CD978 /* CoreDataMyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0DAD62B239AEC000CD978 /* CoreDataMyListRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A32BA22D2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataAnime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A32BA22E2B23A477003F1F06 /* CoreDataAnime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataAnime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A32BA2322B23A4AD003F1F06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A32BA2352B23AD46003F1F06 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
+		A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
 		A356BCFB2B21E6EB006929B2 /* KleverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeApp.swift; sourceTree = "<group>"; };
 		A356BD002B21E6EB006929B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +114,8 @@
 		A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		A356BD7C2B234CEA006929B2 /* AnimeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsView.swift; sourceTree = "<group>"; };
 		A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsViewModel.swift; sourceTree = "<group>"; };
+		A3C0DAD32B2399B8000CD978 /* MyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRepository.swift; sourceTree = "<group>"; };
+		A3C0DAD62B239AEC000CD978 /* CoreDataMyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMyListRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +143,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32BA2312B23A4A2003F1F06 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A32BA2322B23A4AD003F1F06 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A32BA2342B23AD35003F1F06 /* MyList */ = {
+			isa = PBXGroup;
+			children = (
+				A32BA2352B23AD46003F1F06 /* MyListView.swift */,
+				A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */,
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
 		A356BCF22B21E6EB006929B2 = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +189,7 @@
 				A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */,
 				A356BD002B21E6EB006929B2 /* ContentView.swift */,
 				A356BD022B21E6ED006929B2 /* Assets.xcassets */,
-				A356BD282B21E754006929B2 /* Database.xcdatamodeld */,
+				A356BD282B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld */,
 				A356BD042B21E6ED006929B2 /* Preview Content */,
 			);
 			path = KleverChallenge;
@@ -214,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				A356BD312B21EA6B006929B2 /* AnimeRepository.swift */,
+				A3C0DAD32B2399B8000CD978 /* MyListRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -229,6 +261,7 @@
 		A356BD382B21EF41006929B2 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A32BA2312B23A4A2003F1F06 /* CoreData */,
 				A356BD3E2B21F189006929B2 /* Repository */,
 				A356BD392B21EF4F006929B2 /* HTTP */,
 			);
@@ -250,6 +283,7 @@
 		A356BD3E2B21F189006929B2 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				A3C0DAD52B239AC4000CD978 /* MyListRepository */,
 				A356BD6C2B2257EA006929B2 /* ImageRepository */,
 				A356BD3F2B21F19C006929B2 /* APIAnimeRepository.swift */,
 			);
@@ -321,6 +355,7 @@
 		A356BD5B2B22340D006929B2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A32BA2342B23AD35003F1F06 /* MyList */,
 				A356BD7B2B234CD5006929B2 /* AnimeDetails */,
 				A356BD602B2234A8006929B2 /* Home */,
 				A356BD5D2B22342C006929B2 /* Root */,
@@ -412,6 +447,24 @@
 				A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */,
 			);
 			path = AnimeDetails;
+			sourceTree = "<group>";
+		};
+		A3828E982B23A22F003C637A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A32BA22D2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift */,
+				A32BA22E2B23A477003F1F06 /* CoreDataAnime+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3C0DAD52B239AC4000CD978 /* MyListRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A3828E982B23A22F003C637A /* Model */,
+				A3C0DAD62B239AEC000CD978 /* CoreDataMyListRepository.swift */,
+			);
+			path = MyListRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,23 +605,30 @@
 				A356BD7D2B234CEA006929B2 /* AnimeDetailsView.swift in Sources */,
 				A356BD702B225850006929B2 /* RemoteImageRepository.swift in Sources */,
 				A356BD642B2235BD006929B2 /* HomeViewModel.swift in Sources */,
+				A3C0DAD42B2399B8000CD978 /* MyListRepository.swift in Sources */,
 				A356BD622B2234C0006929B2 /* HomeView.swift in Sources */,
 				A356BD6B2B2236E8006929B2 /* Anime+mock.swift in Sources */,
 				A356BD592B2232C3006929B2 /* AnimeListResponse.swift in Sources */,
 				A356BD6E2B225800006929B2 /* ImageRepository.swift in Sources */,
+				A32BA2362B23AD46003F1F06 /* MyListView.swift in Sources */,
 				A356BD5F2B22345E006929B2 /* RootView.swift in Sources */,
 				A356BD7F2B235096006929B2 /* AnimeDetailsViewModel.swift in Sources */,
 				A356BD3B2B21EF64006929B2 /* HTTPService.swift in Sources */,
 				A356BD722B225E1D006929B2 /* LocalImageRepository.swift in Sources */,
+				A3C0DAD72B239AEC000CD978 /* CoreDataMyListRepository.swift in Sources */,
 				A356BD662B2235FD006929B2 /* AnimeListItemViewModel.swift in Sources */,
+				A32BA2332B23A4AD003F1F06 /* CoreDataManager.swift in Sources */,
 				A356BD3D2B21EFDC006929B2 /* APIRequest.swift in Sources */,
+				A32BA2302B23A477003F1F06 /* CoreDataAnime+CoreDataProperties.swift in Sources */,
+				A32BA22F2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift in Sources */,
 				A356BD472B21F75B006929B2 /* URLComponents+addQueryItem.swift in Sources */,
 				A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */,
 				A356BD322B21EA6B006929B2 /* AnimeRepository.swift in Sources */,
-				A356BD2A2B21E754006929B2 /* Database.xcdatamodeld in Sources */,
+				A356BD2A2B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld in Sources */,
 				A356BD342B21EABD006929B2 /* Season.swift in Sources */,
 				A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */,
 				A356BD682B2236A4006929B2 /* AnimeListItemView.swift in Sources */,
+				A32BA2382B23AD8F003F1F06 /* MyListViewModel.swift in Sources */,
 				A356BD402B21F19C006929B2 /* APIAnimeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,13 +955,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A356BD282B21E754006929B2 /* Database.xcdatamodeld */ = {
+		A356BD282B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				A356BD292B21E754006929B2 /* Database.xcdatamodel */,
 			);
 			currentVersion = A356BD292B21E754006929B2 /* Database.xcdatamodel */;
-			path = Database.xcdatamodeld;
+			path = KleverChallengeDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

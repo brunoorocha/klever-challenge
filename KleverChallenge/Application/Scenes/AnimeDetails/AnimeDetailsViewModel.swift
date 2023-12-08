@@ -9,6 +9,7 @@ import SwiftUI
 
 class AnimeDetailsViewModel: ObservableObject {
     private let imageRepository: ImageRepository
+    private let myListRepository: MyListRepository
     let model: Anime
     
     var title: String {
@@ -37,9 +38,14 @@ class AnimeDetailsViewModel: ObservableObject {
     @Published var isShowingSnackBar = false
     @Published var snackBarMessage = ""
     
-    init(model: Anime, imageRepository: ImageRepository = CachedImageRepository()) {
+    init(
+        model: Anime,
+        imageRepository: ImageRepository = CachedImageRepository(),
+        myListRepository: MyListRepository = CoreDataMyListRepository()
+    ) {
         self.model = model
         self.imageRepository = imageRepository
+        self.myListRepository = myListRepository
         Task {
             await loadPosterImage()
         }
@@ -59,6 +65,11 @@ class AnimeDetailsViewModel: ObservableObject {
     func didTapOnMyListButton() {
         isInMyList.toggle()
         showSnackBar()
+        if isInMyList {
+            myListRepository.add(anime: model)
+            return
+        }
+        myListRepository.remove(anime: model)
     }
     
     func showSnackBar() {
