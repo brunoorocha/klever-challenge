@@ -31,8 +31,11 @@ class AnimeDetailsViewModel: ObservableObject {
     var synopsis: String {
         model.synopsis ?? "No synopsys availabe."
     }
-
+    
     @Published var posterImage: UIImage?
+    @Published var isInMyList = false
+    @Published var isShowingSnackBar = false
+    @Published var snackBarMessage = ""
     
     init(model: Anime, imageRepository: ImageRepository = CachedImageRepository()) {
         self.model = model
@@ -50,6 +53,20 @@ class AnimeDetailsViewModel: ObservableObject {
             posterImage = UIImage(data: data)
         } catch {
             print(error)
+        }
+    }
+    
+    func didTapOnMyListButton() {
+        isInMyList.toggle()
+        showSnackBar()
+    }
+    
+    func showSnackBar() {
+        isShowingSnackBar = true
+        snackBarMessage = isInMyList ? "Added to My List" : "Removed from My List"
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.isShowingSnackBar = false
         }
     }
 }

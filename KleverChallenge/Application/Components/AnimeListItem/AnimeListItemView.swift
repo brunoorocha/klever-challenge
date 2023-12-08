@@ -31,7 +31,7 @@ struct AnimeListItemView: View {
                     .background(Color.primary.opacity(0.08))
                 }
             }
-            .cornerRadius(16)
+            .cornerRadius(20)
 
             Text(viewModel.title)
                 .bold()
