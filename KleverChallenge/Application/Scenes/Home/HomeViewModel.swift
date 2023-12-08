@@ -21,14 +21,16 @@ class HomeViewModel: ObservableObject {
     @MainActor
     func loadAnimes() async {
         isLoading = true
+        isShowingError = false
         defer {
             isLoading = false
         }
 
         do {
-            let animes = try await repository.animes(fromSeason: .current, ofYear: 2023)
+            let currentYear = Calendar.current.component(.year, from: .now)
+            let animes = try await repository.animes(fromSeason: .current, ofYear: currentYear)
             self.animes = animes.map {
-                AnimeListItemViewModel.init(model: $0)
+                AnimeListItemViewModel(model: $0)
             }
         } catch {
             isShowingError = true

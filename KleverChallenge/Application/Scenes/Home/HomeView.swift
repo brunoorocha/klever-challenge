@@ -16,7 +16,7 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    LazyVGrid(columns: gridColumns, spacing: 40) {
+                    LazyVGrid(columns: gridColumns, spacing: 32) {
                         ForEach(viewModel.animes) { anime in
                             AnimeListItemView(viewModel: anime)
                         }

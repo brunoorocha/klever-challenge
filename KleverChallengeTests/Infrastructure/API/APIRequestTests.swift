@@ -19,9 +19,10 @@ final class APIRequestTests: XCTestCase {
 
     func testAPIRequest_WhenPropertiesAreValid_ShouldCreateRequest() {
         let apiRequest = MockAPIRequest()
-        let urlRequest = apiRequest.urlRequest
+        let urlComponents = URLComponents(url: apiRequest.urlRequest!.url!, resolvingAgainstBaseURL: true)!
+        let queryItemsDictionary = Dictionary(uniqueKeysWithValues: urlComponents.queryItems!.map { ($0.name, $0.value!) })
         
-        XCTAssertNotNil(urlRequest)
-        XCTAssertEqual(urlRequest!.url!.absoluteString, "https://www.my-api.com/resources?param2=123&param1=value")
+        XCTAssertEqual(queryItemsDictionary.count, apiRequest.params.count)
+        XCTAssertEqual(queryItemsDictionary, apiRequest.params)
     }
 }

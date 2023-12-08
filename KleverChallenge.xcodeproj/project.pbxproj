@@ -40,6 +40,7 @@
 		A356BD702B225850006929B2 /* RemoteImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD6F2B225850006929B2 /* RemoteImageRepository.swift */; };
 		A356BD722B225E1D006929B2 /* LocalImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD712B225E1D006929B2 /* LocalImageRepository.swift */; };
 		A356BD742B2262D2006929B2 /* CachedImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD732B2262D2006929B2 /* CachedImageRepository.swift */; };
+		A356BD792B233B9F006929B2 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		A356BD6F2B225850006929B2 /* RemoteImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageRepository.swift; sourceTree = "<group>"; };
 		A356BD712B225E1D006929B2 /* LocalImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageRepository.swift; sourceTree = "<group>"; };
 		A356BD732B2262D2006929B2 /* CachedImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageRepository.swift; sourceTree = "<group>"; };
+		A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		A356BD0E2B21E6ED006929B2 /* KleverChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A356BD752B233B78006929B2 /* Application */,
 				A356BD482B21F7D1006929B2 /* Infrastructure */,
 				A356BD352B21EB62006929B2 /* Domain */,
 				A356BD0F2B21E6ED006929B2 /* KleverChallengeTests.swift */,
@@ -365,6 +368,30 @@
 			path = ImageRepository;
 			sourceTree = "<group>";
 		};
+		A356BD752B233B78006929B2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD762B233B7D006929B2 /* Scenes */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A356BD762B233B7D006929B2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD772B233B89006929B2 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A356BD772B233B89006929B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +558,7 @@
 				A356BD4B2B21F7F3006929B2 /* APIRequestTests.swift in Sources */,
 				A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */,
 				A356BD572B2230B4006929B2 /* ReadJSONFile.swift in Sources */,
+				A356BD792B233B9F006929B2 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
