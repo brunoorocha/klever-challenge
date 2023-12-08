@@ -11,7 +11,7 @@ struct AnimeDetailsView: View {
     @StateObject var viewModel: AnimeDetailsViewModel
     
     var snackBarOffset: CGFloat {
-        viewModel.isShowingSnackBar ? 0 : 100
+        viewModel.isShowingSnackBar ? 0 : 160
     }
 
     var body: some View {
@@ -114,6 +114,7 @@ struct AnimeDetailsView: View {
                 .animation(.spring(), value: viewModel.isShowingSnackBar)
                 .offset(y: snackBarOffset)
             }
+            .padding(.bottom, 16)
         }
         .navigationTitle(viewModel.title)
         .navigationBarTitleDisplayMode(.inline)
@@ -131,9 +132,11 @@ struct AnimeDetailsView: View {
 struct AnimeDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NavigationStack {
-                AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: .mock))
-                    .preferredColorScheme(.dark)
+            TabView {
+                NavigationStack {
+                    AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: .mock))
+                        .preferredColorScheme(.dark)
+                }
             }
             NavigationStack {
                 AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: .mock))

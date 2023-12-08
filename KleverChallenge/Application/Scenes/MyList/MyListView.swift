@@ -14,17 +14,11 @@ struct MyListView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack {
-                    LazyVGrid(columns: gridColumns, spacing: 32) {
-                        ForEach(viewModel.animes) { viewModel in
-                            NavigationLink(value: viewModel.model) {
-                                AnimeListItemView(viewModel: viewModel)
-                                    .foregroundColor(.primary)
-                            }
-                        }
-                    }
-                    .padding(16)
+            VStack {
+                if viewModel.animes.isEmpty {
+                    emptyStateView
+                } else {
+                    listView
                 }
             }
             .onAppear {
@@ -34,6 +28,31 @@ struct MyListView: View {
             .navigationDestination(for: Anime.self) { anime in
                 AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: anime))
             }
+        }
+    }
+    
+    private var emptyStateView: some View {
+        VStack {
+            Text("You don't have animes in your list 🍃")
+                .font(.headline)
+            Text("To add animes to your list open an anime and tap on \"+ My List\" button.")
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 40)
+                .padding(.top, 1)
+        }
+    }
+    
+    private var listView: some View {
+        ScrollView {
+            LazyVGrid(columns: gridColumns, spacing: 32) {
+                ForEach(viewModel.animes) { viewModel in
+                    NavigationLink(value: viewModel.model) {
+                        AnimeListItemView(viewModel: viewModel)
+                            .foregroundColor(.primary)
+                    }
+                }
+            }
+            .padding(16)
         }
     }
 }

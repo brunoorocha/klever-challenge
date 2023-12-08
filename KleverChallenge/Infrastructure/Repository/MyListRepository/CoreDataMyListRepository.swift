@@ -64,14 +64,23 @@ extension CoreDataMyListRepository: MyListRepository {
     }
 
     func remove(anime: Anime) {
+        guard let coreDataAnime = findCoreDataAnime(for: anime) else { return }
+        context.delete(coreDataAnime)
+    }
+    
+    func isInMyList(anime: Anime) -> Bool {
+        return findCoreDataAnime(for: anime) != nil
+    }
+    
+    private func findCoreDataAnime(for anime: Anime) -> CoreDataAnime? {
         do {
             let request = NSFetchRequest<CoreDataAnime>(entityName: "CoreDataAnime")
             let predicate = NSPredicate(format: "id == %@", anime.id)
             request.predicate = predicate
-            guard let coreDataAnime = try context.fetch(request).first else { return }
-            context.delete(coreDataAnime)
+            return try context.fetch(request).first
         } catch {
             print(error)
+            return nil
         }
     }
 }

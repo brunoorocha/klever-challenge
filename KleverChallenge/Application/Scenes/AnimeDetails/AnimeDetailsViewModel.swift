@@ -46,6 +46,7 @@ class AnimeDetailsViewModel: ObservableObject {
         self.model = model
         self.imageRepository = imageRepository
         self.myListRepository = myListRepository
+        verifyIfItsInMyList()
         Task {
             await loadPosterImage()
         }
@@ -60,6 +61,10 @@ class AnimeDetailsViewModel: ObservableObject {
         } catch {
             print(error)
         }
+    }
+    
+    func verifyIfItsInMyList() {
+        isInMyList = myListRepository.isInMyList(anime: model)
     }
     
     func didTapOnMyListButton() {

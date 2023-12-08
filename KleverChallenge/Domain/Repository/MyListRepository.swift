@@ -11,4 +11,5 @@ protocol MyListRepository {
     func myList() -> [Anime]
     func add(anime: Anime)
     func remove(anime: Anime)
+    func isInMyList(anime: Anime) -> Bool
 }
