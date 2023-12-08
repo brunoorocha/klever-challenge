@@ -22,7 +22,7 @@ extension Anime: Decodable {
         }
 
         enum PosterImageCodingKeys: String, CodingKey {
-            case posterImageURL = "small"
+            case posterImageURL = "medium"
             case coverImageURL = "large"
         }
     }
@@ -39,5 +39,6 @@ extension Anime: Decodable {
         episodeCount = try attributesContainer.decode(Int?.self, forKey: .episodeCount)
         posterImageURL = try posterImageContainer?.decodeIfPresent(String.self, forKey: .posterImageURL)
         coverImageURL = try posterImageContainer?.decodeIfPresent(String.self, forKey: .coverImageURL)
+        type = try attributesContainer.decode(String.self, forKey: .type)
     }
 }

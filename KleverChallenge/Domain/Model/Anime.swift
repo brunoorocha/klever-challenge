@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Anime {
+struct Anime: Hashable, Equatable {
     let id: String
     let title: String
     let synopsis: String?
@@ -15,4 +15,5 @@ struct Anime {
     let posterImageURL: String?
     let episodeCount: Int?
     let status: String
+    let type: String
 }

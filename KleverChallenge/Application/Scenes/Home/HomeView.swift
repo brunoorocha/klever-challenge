@@ -17,8 +17,11 @@ struct HomeView: View {
             ScrollView {
                 VStack {
                     LazyVGrid(columns: gridColumns, spacing: 32) {
-                        ForEach(viewModel.animes) { anime in
-                            AnimeListItemView(viewModel: anime)
+                        ForEach(viewModel.animes) { viewModel in
+                            NavigationLink(value: viewModel.model) {
+                                AnimeListItemView(viewModel: viewModel)
+                                    .foregroundColor(.primary)
+                            }
                         }
                     }
                     .padding(16)
@@ -33,6 +36,9 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Home")
+            .navigationDestination(for: Anime.self) { anime in
+                AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: anime))
+            }
         }
         .onAppear {
             Task {
@@ -64,6 +70,10 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel())
+        Group {
+            HomeView(viewModel: HomeViewModel())
+            HomeView(viewModel: HomeViewModel())
+                .preferredColorScheme(.dark)
+        }
     }
 }

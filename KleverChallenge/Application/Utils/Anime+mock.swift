@@ -16,7 +16,8 @@ extension Anime {
             coverImageURL: "https://media.kitsu.io/anime/47132/cover_image/large-5e20fc6eb29952f8986b7b5908b3eebe.jpeg",
             posterImageURL: "https://media.kitsu.io/anime/47132/poster_image/small-6359717481b255b5249614e996022afd.jpeg",
             episodeCount: 12,
-            status: "current"
+            status: "current",
+            type: "TV"
         )
     }
 }

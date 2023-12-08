@@ -8,8 +8,8 @@
 import SwiftUI
 
 class AnimeListItemViewModel: Identifiable, ObservableObject {
-    private let model: Anime
     private let repository: ImageRepository
+    let model: Anime
 
     let id = UUID()
     
