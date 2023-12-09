@@ -48,6 +48,8 @@
 		A356BD792B233B9F006929B2 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */; };
 		A356BD7D2B234CEA006929B2 /* AnimeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD7C2B234CEA006929B2 /* AnimeDetailsView.swift */; };
 		A356BD7F2B235096006929B2 /* AnimeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */; };
+		A36C92CC2B24D53200A93167 /* MyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C92CB2B24D53200A93167 /* MyListViewModelTests.swift */; };
+		A36C92CF2B24DACB00A93167 /* AnimeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C92CE2B24DACB00A93167 /* AnimeDetailsViewModelTests.swift */; };
 		A3C0DAD42B2399B8000CD978 /* MyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0DAD32B2399B8000CD978 /* MyListRepository.swift */; };
 		A3C0DAD72B239AEC000CD978 /* CoreDataMyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0DAD62B239AEC000CD978 /* CoreDataMyListRepository.swift */; };
 /* End PBXBuildFile section */
@@ -114,6 +116,8 @@
 		A356BD782B233B9F006929B2 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		A356BD7C2B234CEA006929B2 /* AnimeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsView.swift; sourceTree = "<group>"; };
 		A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsViewModel.swift; sourceTree = "<group>"; };
+		A36C92CB2B24D53200A93167 /* MyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModelTests.swift; sourceTree = "<group>"; };
+		A36C92CE2B24DACB00A93167 /* AnimeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		A3C0DAD32B2399B8000CD978 /* MyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRepository.swift; sourceTree = "<group>"; };
 		A3C0DAD62B239AEC000CD978 /* CoreDataMyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMyListRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -418,6 +422,8 @@
 		A356BD762B233B7D006929B2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A36C92CD2B24DA6B00A93167 /* AnimeDetails */,
+				A36C92CA2B24D50B00A93167 /* MyList */,
 				A356BD772B233B89006929B2 /* Home */,
 			);
 			path = Scenes;
@@ -445,6 +451,22 @@
 			children = (
 				A356BD7C2B234CEA006929B2 /* AnimeDetailsView.swift */,
 				A356BD7E2B235096006929B2 /* AnimeDetailsViewModel.swift */,
+			);
+			path = AnimeDetails;
+			sourceTree = "<group>";
+		};
+		A36C92CA2B24D50B00A93167 /* MyList */ = {
+			isa = PBXGroup;
+			children = (
+				A36C92CB2B24D53200A93167 /* MyListViewModelTests.swift */,
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
+		A36C92CD2B24DA6B00A93167 /* AnimeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A36C92CE2B24DACB00A93167 /* AnimeDetailsViewModelTests.swift */,
 			);
 			path = AnimeDetails;
 			sourceTree = "<group>";
@@ -641,8 +663,10 @@
 				A356BD502B21FB97006929B2 /* AnimeDecodingTests.swift in Sources */,
 				A356BD4B2B21F7F3006929B2 /* APIRequestTests.swift in Sources */,
 				A356BD102B21E6ED006929B2 /* KleverChallengeTests.swift in Sources */,
+				A36C92CF2B24DACB00A93167 /* AnimeDetailsViewModelTests.swift in Sources */,
 				A356BD572B2230B4006929B2 /* ReadJSONFile.swift in Sources */,
 				A356BD792B233B9F006929B2 /* HomeViewModelTests.swift in Sources */,
+				A36C92CC2B24D53200A93167 /* MyListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

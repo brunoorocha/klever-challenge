@@ -55,8 +55,8 @@ final class HomeViewModelTests: XCTestCase {
         await sut.loadAnimes()
 
         XCTAssertEqual(sut.animes.count, mockAnimes.count)
-        sut.animes.enumerated().forEach { element in
-            XCTAssertEqual(mockAnimes[element.offset].title, element.element.title)
+        sut.animes.enumerated().forEach {
+            XCTAssertEqual($0.element.model, mockAnimes[$0.offset])
         }
     }
     
