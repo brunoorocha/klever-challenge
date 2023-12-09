@@ -66,6 +66,7 @@ extension CoreDataMyListRepository: MyListRepository {
     func remove(anime: Anime) {
         guard let coreDataAnime = findCoreDataAnime(for: anime) else { return }
         context.delete(coreDataAnime)
+        coreDataManager.saveContext()
     }
     
     func isInMyList(anime: Anime) -> Bool {

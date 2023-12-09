@@ -35,7 +35,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationTitle("Home")
+            .navigationTitle(viewModel.season)
             .navigationDestination(for: Anime.self) { anime in
                 AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: anime))
             }

@@ -17,16 +17,21 @@ struct AnimeDetailsView: View {
     var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .bottom) {
-                
                 ScrollView {
                     VStack(alignment: .leading) {
-                        
                         ZStack(alignment: .bottom) {
                             if let posterImage = viewModel.posterImage {
                                 Image(uiImage: posterImage)
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: proxy.size.width, height: proxy.size.height * 0.9)
+                                    .overlay {
+                                        Rectangle()
+                                            .fill(.black.opacity(0))
+                                            .background(
+                                                LinearGradient(gradient: Gradient(colors: [.black.opacity(0.8), .black.opacity(0)]), startPoint: .top, endPoint: .bottom)
+                                            )
+                                    }
                             }
                             
                             VStack(spacing: 0) {

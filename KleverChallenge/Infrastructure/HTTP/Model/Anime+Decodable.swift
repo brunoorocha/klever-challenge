@@ -22,8 +22,8 @@ extension Anime: Decodable {
         }
 
         enum PosterImageCodingKeys: String, CodingKey {
-            case posterImageURL = "medium"
-            case coverImageURL = "large"
+            case posterImageURL = "large"
+            case coverImageURL = "medium"
         }
     }
 

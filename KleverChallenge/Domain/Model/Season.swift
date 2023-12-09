@@ -22,11 +22,11 @@ extension Season {
     
     static func seasonFor(month: Int) -> Season {
         switch month {
-        case 3...5:
+        case 4...6:
             return .spring
-        case 6...8:
+        case 7...9:
             return .summer
-        case 9...11:
+        case 10...12:
             return .fall
         default:
             return .winter

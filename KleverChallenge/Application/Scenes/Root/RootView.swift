@@ -19,6 +19,8 @@ struct RootView: View {
                     Label("My List", systemImage: "heart")
                 }
         }
+        .preferredColorScheme(.dark)
+        .tint(.yellow)
     }
 }
 

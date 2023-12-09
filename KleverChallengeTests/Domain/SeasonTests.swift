@@ -10,16 +10,16 @@ import XCTest
 
 final class SeasonTests: XCTestCase {
     enum Months: Int {
-        case january = 0
-        case may = 3
-        case august = 7
-        case november = 10
+        case january = 1
+        case may = 4
+        case august = 8
+        case december = 12
     }
 
     func testSeasonForMonth_ShouldReturnCorrectSeasonForMonth() {
         XCTAssertEqual(Season.seasonFor(month: Months.january.rawValue), .winter)
         XCTAssertEqual(Season.seasonFor(month: Months.may.rawValue), .spring)
         XCTAssertEqual(Season.seasonFor(month: Months.august.rawValue), .summer)
-        XCTAssertEqual(Season.seasonFor(month: Months.november.rawValue), .fall)
+        XCTAssertEqual(Season.seasonFor(month: Months.december.rawValue), .fall)
     }
 }

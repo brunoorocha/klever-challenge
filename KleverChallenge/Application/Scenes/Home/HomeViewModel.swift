@@ -14,6 +14,12 @@ class HomeViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isShowingError = false
     
+    var season: String {
+        "\(Season.current) \(currentYear)".capitalized
+    }
+    
+    private let currentYear = Calendar.current.component(.year, from: .now)
+    
     init(repository: AnimeRepository = APIAnimeRepository()) {
         self.repository = repository
     }
@@ -27,7 +33,6 @@ class HomeViewModel: ObservableObject {
         }
 
         do {
-            let currentYear = Calendar.current.component(.year, from: .now)
             let animes = try await repository.animes(fromSeason: .current, ofYear: currentYear)
             self.animes = animes.map {
                 AnimeListItemViewModel(model: $0)
