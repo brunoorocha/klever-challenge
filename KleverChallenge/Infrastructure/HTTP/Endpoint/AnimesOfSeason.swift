@@ -10,6 +10,7 @@ import Foundation
 struct AnimesOfSeason {
     let season: Season
     let year: Int
+    let pageLimit: Int
 }
 
 extension AnimesOfSeason: APIRequest {
@@ -21,12 +22,13 @@ extension AnimesOfSeason: APIRequest {
         [
             "filter[season]" : season.rawValue,
             "filter[seasonYear]" : String(year),
+            "page[limit]" : String(pageLimit),
         ]
     }
 }
 
 extension APIRequest where Self == AnimesOfSeason {
     static func animes(fromSeason season: Season, ofYear year: Int) -> Self {
-        AnimesOfSeason(season: season, year: year)
+        AnimesOfSeason(season: season, year: year, pageLimit: 20)
     }
 }
