@@ -31,7 +31,7 @@ extension APIRequest {
 extension HTTPService {
     func request<T: Decodable>(_ request: APIRequest) async throws -> T {
         guard let urlRequest = request.urlRequest else {
-            throw Error.invalidRequest
+            throw HTTPServiceError.invalidRequest
         }
         return try await self.request(urlRequest)
     }

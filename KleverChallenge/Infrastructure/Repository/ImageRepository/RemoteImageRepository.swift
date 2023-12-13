@@ -10,7 +10,7 @@ import Foundation
 final class RemoteImageRepository {
     private let service: HTTPService
     
-    init(service: HTTPService = HTTPService()) {
+    init(service: HTTPService = .loggingHTTPService) {
         self.service = service
     }
 }

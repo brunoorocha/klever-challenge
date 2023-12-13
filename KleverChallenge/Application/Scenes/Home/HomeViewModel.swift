@@ -13,6 +13,7 @@ class HomeViewModel: ObservableObject {
     @Published var animes = [AnimeListItemViewModel]()
     @Published var isLoading = false
     @Published var isShowingError = false
+    @Published var hasNoMoreResults = false
     
     var season: String {
         "\(Season.current) \(currentYear)".capitalized
@@ -26,6 +27,9 @@ class HomeViewModel: ObservableObject {
     
     @MainActor
     func loadAnimes() async {
+        if hasNoMoreResults || isLoading {
+            return
+        }
         isLoading = true
         isShowingError = false
         defer {
@@ -33,10 +37,13 @@ class HomeViewModel: ObservableObject {
         }
 
         do {
-            let animes = try await repository.animes(fromSeason: .current, ofYear: currentYear)
-            self.animes = animes.map {
+            let resultQuantity = 10
+            let results = try await repository.animes(fromSeason: .current, ofYear: currentYear, quantity: resultQuantity, startingFrom: animes.count)
+            let animes = results.map {
                 AnimeListItemViewModel(model: $0)
             }
+            hasNoMoreResults = animes.isEmpty || animes.count < resultQuantity
+            self.animes.append(contentsOf: animes)
         } catch {
             isShowingError = true
             print(error)

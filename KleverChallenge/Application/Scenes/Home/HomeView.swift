@@ -21,6 +21,9 @@ struct HomeView: View {
                             NavigationLink(value: viewModel.model) {
                                 AnimeListItemView(viewModel: viewModel)
                                     .foregroundColor(.primary)
+                                    .onAppear {
+                                        onItemAppear(viewModel)
+                                    }
                             }
                         }
                     }
@@ -32,6 +35,12 @@ struct HomeView: View {
                     
                     if viewModel.isShowingError && !viewModel.isLoading {
                         errorView
+                    }
+                    
+                    if viewModel.hasNoMoreResults {
+                        Text("No more results 🍃")
+                            .padding(20)
+                            .foregroundColor(.gray)
                     }
                 }
             }
@@ -65,6 +74,14 @@ struct HomeView: View {
             }
         }
         .padding([.bottom], 20)
+    }
+    
+    private func onItemAppear(_ item: AnimeListItemViewModel) {
+        if viewModel.animes.last?.model == item.model {
+            Task {
+                await self.viewModel.loadAnimes()
+            }
+        }
     }
 }
 
