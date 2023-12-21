@@ -12,6 +12,8 @@
 		A32BA2332B23A4AD003F1F06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2322B23A4AD003F1F06 /* CoreDataManager.swift */; };
 		A32BA2362B23AD46003F1F06 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2352B23AD46003F1F06 /* MyListView.swift */; };
 		A32BA2382B23AD8F003F1F06 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */; };
+		A33BAF912B2A32EF009AAB12 /* URLSessionHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAF902B2A32EF009AAB12 /* URLSessionHTTPService.swift */; };
+		A33BAF932B2A33C6009AAB12 /* LoggingURLSessionHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAF922B2A33C6009AAB12 /* LoggingURLSessionHTTPService.swift */; };
 		A356BCFF2B21E6EB006929B2 /* KleverChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */; };
 		A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356BD002B21E6EB006929B2 /* ContentView.swift */; };
 		A356BD032B21E6ED006929B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A356BD022B21E6ED006929B2 /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		A32BA2322B23A4AD003F1F06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A32BA2352B23AD46003F1F06 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
+		A33BAF902B2A32EF009AAB12 /* URLSessionHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPService.swift; sourceTree = "<group>"; };
+		A33BAF922B2A33C6009AAB12 /* LoggingURLSessionHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingURLSessionHTTPService.swift; sourceTree = "<group>"; };
 		A356BCFB2B21E6EB006929B2 /* KleverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A356BCFE2B21E6EB006929B2 /* KleverChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengeApp.swift; sourceTree = "<group>"; };
 		A356BD002B21E6EB006929B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,15 @@
 				A32BA2372B23AD8F003F1F06 /* MyListViewModel.swift */,
 			);
 			path = MyList;
+			sourceTree = "<group>";
+		};
+		A33BAF942B2A33CB009AAB12 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A33BAF902B2A32EF009AAB12 /* URLSessionHTTPService.swift */,
+				A33BAF922B2A33C6009AAB12 /* LoggingURLSessionHTTPService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A356BCF22B21E6EB006929B2 = {
@@ -275,6 +288,7 @@
 		A356BD392B21EF4F006929B2 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				A33BAF942B2A33CB009AAB12 /* Service */,
 				A356BD4C2B21FB01006929B2 /* Model */,
 				A356BD432B21F59B006929B2 /* Endpoint */,
 				A356BD3A2B21EF64006929B2 /* HTTPService.swift */,
@@ -625,6 +639,7 @@
 				A356BD452B21F601006929B2 /* AnimesOfSeason.swift in Sources */,
 				A356BD302B21E976006929B2 /* Anime.swift in Sources */,
 				A356BD7D2B234CEA006929B2 /* AnimeDetailsView.swift in Sources */,
+				A33BAF912B2A32EF009AAB12 /* URLSessionHTTPService.swift in Sources */,
 				A356BD702B225850006929B2 /* RemoteImageRepository.swift in Sources */,
 				A356BD642B2235BD006929B2 /* HomeViewModel.swift in Sources */,
 				A3C0DAD42B2399B8000CD978 /* MyListRepository.swift in Sources */,
@@ -645,6 +660,7 @@
 				A32BA22F2B23A477003F1F06 /* CoreDataAnime+CoreDataClass.swift in Sources */,
 				A356BD472B21F75B006929B2 /* URLComponents+addQueryItem.swift in Sources */,
 				A356BD012B21E6EB006929B2 /* ContentView.swift in Sources */,
+				A33BAF932B2A33C6009AAB12 /* LoggingURLSessionHTTPService.swift in Sources */,
 				A356BD322B21EA6B006929B2 /* AnimeRepository.swift in Sources */,
 				A356BD2A2B21E754006929B2 /* KleverChallengeDataModel.xcdatamodeld in Sources */,
 				A356BD342B21EABD006929B2 /* Season.swift in Sources */,

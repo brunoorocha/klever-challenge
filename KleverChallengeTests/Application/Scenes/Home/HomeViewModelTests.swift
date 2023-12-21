@@ -10,13 +10,13 @@ import XCTest
 
 final class SpyAnimeRepository: AnimeRepository {
     private(set) var animesFromSeasonCallCount = 0
-    private(set) var animesFromSeasonCallParams: (season: Season, year: Int)?
+    private(set) var animesFromSeasonCallParams: (season: Season, year: Int, quantity: Int, startingFrom: Int)?
     var animesFromSeasonMockReturn = [Anime]()
     var animesFromSeasonMockError: Error?
 
-    func animes(fromSeason season: Season, ofYear year: Int) async throws -> [Anime] {
+    func animes(fromSeason season: Season, ofYear year: Int, quantity: Int, startingFrom: Int) async throws -> [Anime] {
         animesFromSeasonCallCount += 1
-        animesFromSeasonCallParams = (season, year)
+        animesFromSeasonCallParams = (season, year, quantity, startingFrom)
         if let error = animesFromSeasonMockError {
             throw error
         }
@@ -46,6 +46,24 @@ final class HomeViewModelTests: XCTestCase {
 
         XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.season, .current)
         XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.year, currentYear)
+        XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.quantity, 10)
+        XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.startingFrom, 0)
+    }
+    
+    func testLoadAnimes_WhenLoadMoreAnimes_ShouldCallRepositoryWithRightParams() async {
+        sut.animes = Array(repeating: AnimeListItemViewModel(model: .mock), count: 5)
+        await sut.loadAnimes()
+
+        XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.quantity, 10)
+        XCTAssertEqual(spyRepository.animesFromSeasonCallParams?.startingFrom, sut.animes.count)
+    }
+    
+    func testLoadAnimes_WhenLoadMoreAnimes_ShouldAppendReturnToAnimes() async {
+        sut.animes = Array(repeating: AnimeListItemViewModel(model: .mock), count: 5)
+        spyRepository.animesFromSeasonMockReturn = Array(repeating: Anime.mock, count: 10)
+        await sut.loadAnimes()
+
+        XCTAssertEqual(sut.animes.count, 15)
     }
     
     func testLoadAnimes_WhenLoadAnimesSuccessfuly_ShouldUpdateAnimesProperty() async {
@@ -61,7 +79,7 @@ final class HomeViewModelTests: XCTestCase {
     }
     
     func testLoadAnimes_WhenLoadAnimesFails_ShouldShowError() async {
-        spyRepository.animesFromSeasonMockError = HTTPService.Error.requestFailed(statusCode: 400)
+        spyRepository.animesFromSeasonMockError = HTTPServiceError.requestFailed(statusCode: 400)
 
         await sut.loadAnimes()
 

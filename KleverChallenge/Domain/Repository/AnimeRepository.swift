@@ -8,5 +8,5 @@
 import Foundation
 
 protocol AnimeRepository {
-    func animes(fromSeason season: Season, ofYear year: Int) async throws -> [Anime]
+    func animes(fromSeason season: Season, ofYear year: Int, quantity: Int, startingFrom: Int) async throws -> [Anime]
 }
