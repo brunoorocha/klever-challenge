@@ -16,9 +16,9 @@ struct MyListView: View {
         NavigationStack {
             VStack {
                 if viewModel.animes.isEmpty {
-                    emptyStateView
+                    EmptyStateView()
                 } else {
-                    listView
+                    ListView()
                 }
             }
             .onAppear {
@@ -28,10 +28,35 @@ struct MyListView: View {
             .navigationDestination(for: Anime.self) { anime in
                 AnimeDetailsView(viewModel: AnimeDetailsViewModel(model: anime))
             }
+            .toolbar {
+                ToolbarItem {
+                    FilterView()
+                }
+            }
         }
     }
     
-    private var emptyStateView: some View {
+    @ViewBuilder
+    private func FilterView() -> some View {
+        Menu {
+            Section {
+                Menu {
+                    Picker("Sort results by", selection: $viewModel.selectedSorting) {
+                        ForEach(viewModel.sortingOptions) { option in
+                            Text(option.rawValue)
+                        }
+                    }
+                } label: {
+                    Label("Sort results by", systemImage: "arrow.up.arrow.down")
+                }
+            }
+        } label: {
+            Label("", systemImage: "ellipsis.circle")
+        }
+    }
+    
+    @ViewBuilder
+    private func EmptyStateView() -> some View {
         VStack {
             Text("You don't have animes in your list 🍃")
                 .font(.headline)
@@ -42,7 +67,8 @@ struct MyListView: View {
         }
     }
     
-    private var listView: some View {
+    @ViewBuilder
+    private func ListView() -> some View {
         ScrollView {
             LazyVGrid(columns: gridColumns, spacing: 32) {
                 ForEach(viewModel.animes) { viewModel in

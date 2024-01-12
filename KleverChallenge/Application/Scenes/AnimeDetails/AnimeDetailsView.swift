@@ -48,7 +48,7 @@ struct AnimeDetailsView: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.white.opacity(0.8))
                                     
-                                    dotSeparator
+                                    DotSeparator()
                                     
                                     Text(viewModel.status)
                                         .font(.caption)
@@ -57,8 +57,7 @@ struct AnimeDetailsView: View {
                                         .foregroundColor(.white.opacity(0.8))
                                     
                                     if let episodeCount = viewModel.episodeCount {
-                                        dotSeparator
-                                        
+                                        DotSeparator()
                                         Text(episodeCount)
                                             .font(.caption)
                                             .fontWeight(.heavy)
@@ -125,7 +124,8 @@ struct AnimeDetailsView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private var dotSeparator: some View {
+    @ViewBuilder
+    private func DotSeparator() -> some View {
         Text("•")
             .font(.caption)
             .fontWeight(.heavy)
