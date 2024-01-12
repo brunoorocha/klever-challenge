@@ -30,11 +30,11 @@ struct HomeView: View {
                     .padding(16)
 
                     if viewModel.isLoading {
-                        loadingView
+                        LoadingView()
                     }
                     
                     if viewModel.isShowingError && !viewModel.isLoading {
-                        errorView
+                        ErrorView()
                     }
                     
                     if viewModel.hasNoMoreResults {
@@ -55,15 +55,17 @@ struct HomeView: View {
             }
         }
     }
-    
-    private var loadingView: some View {
+
+    @ViewBuilder
+    private func LoadingView() -> some View {
         HStack() {
             ProgressView()
                 .padding(20)
         }
     }
     
-    private var errorView: some View {
+    @ViewBuilder
+    private func ErrorView() -> some View {
         VStack {
             Text("Something's went wrong 😕")
                 .padding(.bottom, 8)
